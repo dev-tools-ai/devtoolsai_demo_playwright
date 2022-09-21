@@ -17,8 +17,8 @@ test('Enter username in Github', async ({ page }) => {
 
 test('Search on duck duck go', async ({ page }) => {
   await page.goto('https://duckduckgo.com');
-  //var element = await page.findByAI('pw_search_box')
-  //await element.type("Hellow World!");
+  var element = await page.findByAI('pw_search_box')
+  await element.type("Hellow World!");
   await new Promise((r) => setTimeout(r, 2000));
 });
 
